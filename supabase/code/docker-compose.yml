@@ -359,7 +359,7 @@ services:
   db:
     image: supabase/postgres:15.6.1.139
     ports:
-    - "5432:5432"  # Expor a porta 5432 do contêiner para o host
+    - "5433:5432"  # Expor a porta 5432 do contêiner para o host
     healthcheck:
       test: pg_isready -U postgres -h localhost
       interval: 5s
